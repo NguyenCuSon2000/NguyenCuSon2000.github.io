@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức ẩm thực Tràng An Hà Nội</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/TinTuc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="Logo">
+            <img src="images/Logo.jpg" alt="Logo.jpg">
+        </div>
+        <div class="cart-info hidden-xs">
+            <a class="cart-link" href="GioHang.html">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <div class="navholder">
+            <nav id="subnav">
+                <ul class="Dang-Ky">
+                    <li><a href=""><i class="fas fa-phone-alt">0963104800</i></a></li>
+                    <li><a href="">ĐĂNG KÝ</a></li>
+                    <li><a href="">ĐĂNG NHẬP</a></li>
+                </ul>
+            </nav>
+            <div class="header-line">
+                <p>Miễn phí vẫn chuyển <span class="mar-15">ĐƠN HÀNG TRÊN 500K</span></p>
+            </div>
+            <div class="search-bar">
+                <div class="inner_Search">
+                    <form action="" method="POST">
+                        <input type="search" placeholder="Tìm kiếm">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                <li>
+                    <a href="ThucDon.html">Thực đơn</a>
+                    <ul>
+                        <li><a href="ThucDonMonBanh.html">Bánh</a></li>
+                        <li><a href="ThucDonMonChao.html">Cháo</a></li>
+                        <li><a href="ThucDonMonBun.html">Bún</a></li>
+                        <li><a href="ThucDonMonNuong.html">Nướng</a></li>
+                        <li><a href="ThucDonMonLau.html">Lẩu</a></li>
+                        <li><a href="ThucDonMonHap.html">Hấp</a></li>
+                    </ul>
+                </li>
+                <li><a href="TinTuc.html">Tin tức</a></li>
+                <li><a href="DatHang.html">Đặt hàng</a></li>
+                <li><a href="LienHe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="header-banner">
+            <a href=""><img src="images/TrangAn-banner.jpg" alt="TrangAn-banner.jpg"></a>
+        </div> -->
+    </header>
+    
+    <section class="tin-tuc">
+        <article class="left">
+            <div class="Danh-muc">
+                <div class="block-title">
+                    <h4 class="title">Danh mục blog</h4>
+                </div>
+                <ul class="nav" id="menu-blog">
+                    <li class="first">
+                        <a href="index.html"><span>Trang chủ</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Giới thiệu</span></a>
+                    </li>
+                    <li>
+                        <a href="ThucDon.html"><span>Thực đơn</span></a>
+                    </li>
+                    <li class="current active">
+                        <a href="TinTuc.html"><span>Tin tức - sự kiện</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Đặt hàng</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Liên hệ</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Bai-viet">
+                <div class="block-title">
+                    <h4 class="title">Bài viết mới nhất</h4>
+                </div>
+                <div class="content-latest">
+                    <!-- Begin Danh mục blo -->
+                    <div class="article seller-item">
+                        <div class="sellers-img">
+                            <a href="" class="product-block-img content-img clearfix">
+                                <img src="images/Bun-Thang.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5>
+                                <a href="https://www.24h.com.vn/am-thuc/bun-thang-dinh-cao-am-thuc-ha-thanh-c460a1030730.html">Bún thang: Đỉnh cao ẩm thực Hà thành</a><br>
+                                <span><i class="far fa-calendar-alt"></i> 21/01/2020</span>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="article seller-item">
+                        <div class="sellers-img">
+                            <a href="" class="product-block-img content-img clearfix">
+                                <img src="images/Bun-Dau-Mam-Tom.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5>
+                                <a href="">Bún đậu mắm tôm - hương vị giản đơn của người dân Hà Thành</a><br>
+                                <span><i class="far fa-calendar-alt"></i> 23/01/2020</span>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="article seller-item">
+                        <div class="sellers-img">
+                            <a href="" class="product-block-img content-img clearfix">
+                                <img src="images/Ga-Nuong.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h5>
+                                <a href="">Gà nướng ngập sốt thách thức vị giác giới trẻ Hà thành</a><br>
+                                <span><i class="far fa-calendar-alt"></i> 15/03/2020</span>
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- End Danh mục blog -->
+                </div>
+            </div>
+        </article>
+        <article class="right">
+            <span class="header page">
+                <h1>Tin tức</h1>
+            </span>
+            <!-- Begin Nội dung blog -->
+            <div class="news-content row">
+                <div class="img-article">
+                    <a href="https://www.24h.com.vn/am-thuc/bun-thang-dinh-cao-am-thuc-ha-thanh-c460a1030730.html"><img src="images/Bun-Thang.jpg" alt="Bún thang"></a>
+                </div>
+                <div class="content-artical">
+                    <!-- Begin Nội dung bài viết -->
+                    <h2 class="title-article">
+                        <a href="https://www.24h.com.vn/am-thuc/bun-thang-dinh-cao-am-thuc-ha-thanh-c460a1030730.html">Bún thang: Đỉnh cao ẩm thực Hà thành</a>
+                    </h2>
+                    <div class="body-content">
+                        <ul class="date-post" style="padding-left: 0px;">
+                            <li> 
+                                <i class="far fa-clock"></i>
+                                <p>  09/02/2020</p>
+                            </li>
+                        </ul>
+                        <p>Bún thang leo lên tới tột đỉnh nghệ thuật ẩm thực bắt đầu từ giữa thập niên 80. 
+                            Bún thang không tràn ngập phố như phở, nhưng trong khu bán hàng ăn chợ Bắc Qua (Hà Nội) thì bún thang lại có lợi thế hơn cả phở...
+                        </p>
+                    </div >
+                    <!-- End Nội dung bài viêt -->
+                    <div class="XemTiep">
+                        <a href="" style="font-style: italic; font-size: 13px; color: orange;">Xem tiếp >> </a>
+                    </div>
+                    <div class="postDetails">
+                        <ul class="count-comment-blog" style="padding-left: 0px;">
+                            <li>
+                                <i class="far fa-newspaper"></i>
+                                <a href="">Tin tức</a>
+                            </li>
+                            <li><a href="">Nguyễn Cư Sơn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news-content row">
+                <div class="img-article">
+                    <a href="https://emdep.vn/mon-ngon/bun-dau-mam-tom-huong-vi-gian-don-cua-nguoi-dan-ha-thanh-20170107171405007.html"><img src="images/Bun-Dau-Mam-Tom.jpg" alt="Bún đậu mắm tôm"></a>
+                </div>
+                <div class="content-artical">
+                    <!-- Begin Nội dung bài viết -->
+                    <h2 class="title-article">
+                        <a href="https://emdep.vn/mon-ngon/bun-dau-mam-tom-huong-vi-gian-don-cua-nguoi-dan-ha-thanh-20170107171405007.html">Bún đậu mắm tôm - hương vị giản đơn của người dân Hà Thành</a>
+                    </h2>
+                    <div class="body-content">
+                        <ul class="date-post" style="padding-left: 0px;">
+                            <li> 
+                                <i class="far fa-clock"></i>
+                                <p>  23/02/2020</p>
+                            </li>
+                        </ul>
+                        <p>Nếu phải gọi tên món bún giản đơn, ít cầu kỳ bậc nhất đất Hà Thành, 
+                            tôi chắc chắn những người đã từng lê la mê đắm ẩm thực nơi đây sẽ đồng lòng gọi một cái tên: bún đậu mắm tôm...
+                        </p>
+                    </div >
+                    <!-- End Nội dung bài viêt -->
+                    <div class="XemTiep">
+                        <a href="" style="font-style: italic; font-size: 13px; color: orange;">Xem tiếp >> </a>
+                    </div>
+                    <div class="postDetails">
+                        <ul class="count-comment-blog" style="padding-left: 0px;">
+                            <li>
+                                <i class="far fa-newspaper"></i>
+                                <a href="">Tin tức</a>
+                            </li>
+                            <li><a href="">Nguyễn Cư Sơn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news-content row">
+                <div class="img-article">
+                    <a href=""><img src="images/Ga-Nuong.jpg" alt="Gà nướng"></a>
+                </div>
+                <div class="content-artical">
+                    <!-- Begin Nội dung bài viết -->
+                    <h2 class="title-article">
+                        <a href="">Gà nướng ngập sốt thách thức vị giác giới trẻ Hà thành</a>
+                    </h2>
+                    <div class="body-content">
+                        <ul class="date-post" style="padding-left: 0px;">
+                            <li> 
+                                <i class="far fa-clock"></i>
+                                <p>  09/02/2020</p>
+                            </li>
+                        </ul>
+                        <p>Gà nướng Ò Ó O – Thương hiệu món ăn yêu thích của nhiều tín đồ ẩm thực Sài Gòn bởi nghệ thuật tẩm ướp hương vị đặc biệt, 
+                            thấm đượm bên trong lớp da gà vàng óng vừa ra mắt cơ sở thứ 13 tại 26 Hạ Hồi, Hoàn Kiếm, Hà Nội hứa hẹn chiếm lĩnh mọi giác quan của bất kỳ thực khách có cơ hội thưởng thức...
+                        </p>
+                    </div >
+                    <!-- End Nội dung bài viêt -->
+                    <div class="XemTiep">
+                        <a href="" style="font-style: italic; font-size: 13px; color: orange;">Xem tiếp >> </a>
+                    </div>
+                    <div class="postDetails">
+                        <ul class="count-comment-blog" style="padding-left: 0px;">
+                            <li>
+                                <i class="far fa-newspaper"></i>
+                                <a href="">Tin tức</a>
+                            </li>
+                            <li><a href="">Nguyễn Cư Sơn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <div class="clear-fix"></div>
+    
+    <!-- PHẦN FOOTER -->
+    <footer>
+        <section>
+            <h3>Thời gian</h3>
+            <hr>
+            <div class="footer-block-content">
+                <ul>
+                    <li>
+                        <span class="day">Thứ 2</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 3</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 4</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 5</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h3>Thông tin</h3>
+            <hr>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                <li><a href="ThucDon.html">Thực đơn</a></li>
+                <li><a href="TinTuc.html">Tin tức</a></li>
+                <li><a href="LienHe.html">Liên hệ</a></li>		
+            </ul>
+        </section>
+        <section>
+            <h3>Liên hệ</h3>
+            <hr>
+            <div class="footer-block">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i> Tầng 9 - 18 Lý Thường Kiệt - Hà Nội
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i> 
+                        nguyencuson28102000@gmail.com
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i> 
+                        0963104800
+                    </li>
+                </ul>
+            </div>
+            <div id="widget-social" class="social-icons">
+                <ul class="list-inline">
+                    <li class="li-social facebook-social">
+                        <a target="_blank" href="#" class="social-wrapper facebook">
+                            <span class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social youtube-social">
+                        <a target="_blank" href="#" class="social-wrapper youtube">
+                            <span class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social google-social">
+                        <a target="_blank" href="#" class="social-wrapper google-plus">
+                            <span class="social-icon">
+                                <i class="fab fa-google-plus-g"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social twitter-social">
+                        <a target="_blank"  href="#" class="social-wrapper twitter">
+                            <span class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social instagram-social">
+                        <a target="_blank"  href="#" class="social-wrapper instagram">
+                            <span class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social message-social">
+                        <a target="_blank"  href="#" class="social-wrapper message">
+                            <span class="social-icon">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h3>Gửi liên hệ</h3>
+            <hr>
+            <div class="footer-block">
+                <form action="/contact" method="POST">
+                    <div class="form-wraper">
+                        <ul class="form-list">
+                            <li class="feilds">
+                                <div class="feild">
+                                    <div class="input-box">
+                                        <input type="text" name="text" id="text" placeholder="Tên Của Bạn...">
+                                    </div>
+                                </div>
+                                <div class="feild">
+                                    <div class="input-box">
+                                        <input type="email" name="contact[email]" id="email" placeholder="Email của bạn...">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="wide feild">
+                                <div class="input-box">
+                                    <textarea name="contact[body]" id="" cols="10" rows="7" placeholder="Viết bình luận..."></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buttons-set">
+                        <button type="submit" title="Send" class="button">
+                            <span>Gửi</span>
+                        </button>
+                        <button type="reset" class="button" value="Reset">
+                            <span>Hủy</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="clear-fix"></div>
+    </footer>
+</body>
+</html>

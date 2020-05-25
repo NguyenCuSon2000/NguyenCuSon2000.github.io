@@ -1,0 +1,777 @@
+*{
+    font-family: 'Roboto';
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    width: 100%;
+    margin: 0px auto;
+}
+/* PHẦN HEADER */
+.header{
+    width: 100%;
+    min-height: 200px;
+}
+.Logo{
+    width: 25%;
+    text-align: right;
+    margin-bottom: 5px;
+    
+}
+
+.navholder{
+    width: 24%;
+    position: absolute;
+    top: 30px;
+    right: 280px;
+    float: right;
+}
+
+#subnav{
+    border-bottom: 1px dotted #333333;
+    padding-bottom: 10px;
+    float: left;
+    font-size: 13px;
+}
+
+#subnav > ul{
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 40px;
+}
+
+#subnav > ul >li:first-child{
+    padding-left: 10px;
+}
+
+#subnav > ul > li:first-child::after{
+    border: 0px;
+}
+
+#subnav > ul > li{
+    display: inline-block;
+    position: relative;
+    padding: 0px 14px;
+}
+
+#subnav > ul > li:last-child{
+    padding-right: 0px;
+}
+
+#subnav ul > li::after{
+    border-left: 1px solid #333333;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    top: 1px;
+    left: 0;
+    height: 13px;
+}
+
+#subnav ul li a:hover{
+    color: #FE9705;
+    font-weight: 700;
+}
+
+
+.header p span{
+    color: orange;
+}
+
+.navholder .header-line{
+    color: #333333;
+    font-size: 12px;
+    padding-top: 10px;
+    clear: left;
+    text-align: center;
+}
+
+.header-line span{
+    color: #28b241;
+}
+
+.mar-15{
+    margin-left: 5px;
+}
+
+.cart-info{
+    width: 10px;
+    height: 65px;
+    padding: 4px;
+    margin-left: 25px;
+    float: right;
+    
+}
+
+.header .cart-info .fa-shopping-cart{
+    position: absolute;
+    font-size: 30px;
+    color: blue;
+    top: 20px;
+    right: 200px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.search-bar{
+    margin-top: 90px;
+    float: right;
+    height: 40px;
+}
+.inner_Search{
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 1em;
+    float: left;
+    padding: 5px 40px;
+    height: 40px;
+    
+    
+}
+.inner_Search input{
+    padding: 5px 20px;
+    border: none;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    outline: none;
+}
+
+.search-bar .inner_Search .fa-search{
+    cursor: pointer;
+    color: #757575;
+}
+
+.header-banner{
+    text-align: center;
+    width: 100%;
+    
+}
+.header .header-banner img{
+    width: 100%;
+}
+
+
+
+/* MENU NGANG */
+.menu {
+    min-height: 50px;
+    text-align: center;
+    background-color: #FE9705;
+    border: silver;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    display: inline-block;
+    position: relative;
+    
+}
+.menu li a{
+    display:inline-block;
+    color:white;
+    padding:20px 50px;
+    font-size: 25px;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+.menu li:hover{
+    background-color: #F0C237;
+    /* opacity: 0.6; */
+}
+.menu ul li ul {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    background-color: #FE9705;
+}
+
+.menu ul li ul li{
+    color: white;
+    padding: 3px;
+    width: 190px;
+    height: 65px;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+/* Mobile nav */
+
+.nav__bars-btn{
+    width: 28px;
+    height: 28px;
+    /* color: white; */
+    display: none;
+    margin-left: 8px;
+}
+
+.nav__overlay{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.menu__mobile{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 320px;
+    max-width: 100%;
+    background-color: white;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.nav__moble-list{
+    margin-top: 24px;
+}
+
+.nav__mobile-link{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0px;
+    font-size: 1.4rem;
+}
+
+.nav__mobile-close{
+    font-size: 1.4rem;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.nav__input {
+    display: none;
+}
+
+.nav__input:checked ~ .nav__overlay{
+    display: block;
+}
+
+.nav__input:checked ~ .menu__mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media (max-width: 1023px){
+    .nav__bars-btn{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* PHẦN NỘI DUNG */
+section.content{
+    width: 1300px;
+    min-height: 300px;
+    margin: auto;
+}
+
+.title_Thuc-don h2, .title_Khuyen-Mai h2, .title_TinTuc h2{
+    text-align: center;
+    margin: 20px 0px;
+    color: #444444;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.title_Thuc-don::before{
+    height: 70px;
+    width: 100%;
+    background: url(https://theme.hstatic.net/1000055804/1000533479/14/our-menu.png?v=98) no-repeat center transparent;
+    content: "";
+    display: block;
+    margin-top: 20px;
+}
+
+.content img{
+    width: 380px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+.content img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+section.content article div.Thuc-Don{
+    width: 33%;
+    margin-left: 1px;
+    margin-top: 10px;
+    padding:5px;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+section.content article div.Thuc-Don p a{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 5px;   
+    font-size: 25px;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+
+section.content article div.Thuc-Don p a:hover{
+    color: #FE9705;
+}
+
+.content input[type="button"]{
+    width: 100px;
+    height: 50px;
+    margin: 10px 5px 60px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid sienna;
+    background-color: #FE9705;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+}
+.button input:hover{
+    background-color: violet;
+    cursor: pointer;
+}
+section.content article div.Thuc-Don p span{
+    color: #FE9705;
+    font-family: 'Lobster Two';
+    font-weight: 700px;
+    font-size: 20px;
+}
+
+
+/* PHẦN KHUYẾN MÃI */
+
+
+.Khuyen-Mai h2{
+    text-align: center;
+    margin: 30px 0px;
+    color: #444444;
+}
+
+.content img{
+    width: 380px;
+    height: 250px;
+}
+section.content article div.Khuyen-Mai{
+    width: 30%;
+    margin: 10px 20px;
+    padding:5px;
+    float: left;
+    margin-bottom: 100px;
+}
+section.content article div.Khuyen-Mai p a{
+    padding: 5px 10px;
+    /* float: right; */
+    font-size: 25px;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+
+section.content article div.Khuyen-Mai p.name{
+    float: left;
+}
+
+section.content article div.Khuyen-Mai p.price{
+    color: #D71E1E;
+    text-align: right;
+}
+
+section.content article div.Khuyen-Mai p.price span, strike{
+    font-size: 20px;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+
+section.content article div.Khuyen-Mai p a:hover{
+    color: #FE9705;
+}
+
+section.content article div.Khuyen-Mai strike{
+    font-style: italic;
+    color: #6F6F6F;
+    font-weight: bold;
+    float: right;
+}
+
+section.content article div.Khuyen-mai p span{
+    color: #FE9705;
+}
+
+
+/* PHẦN TIN TỨC */
+
+.Tin-tuc h2{
+    text-align: center;
+    margin: 10px 0px;
+    color: #444444;
+}
+.Tin-tuc img{
+    width: 280px;
+    height: 200px;
+}
+
+.Tin-tuc img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+section.content article div.Tin-tuc{
+    width: 20%;
+    margin-left: 5px;
+    margin-right: 55px;
+    padding:30px 20px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+section.content article div.Tin-tuc p{
+    padding-left: 0px;
+    padding-top: 2px;
+    
+}
+
+section.content article div.Tin-tuc p a{
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.Tin-tuc p a:hover{
+    text-decoration: underline;
+    color: #FE9705;
+}
+
+/* phần footer */
+footer{
+    /* width: 100%; */
+    min-height: 300px;
+    background-color: #e0cfff;
+    background-image: url(../images/img_footer.png);
+    color: white;
+}
+footer a{
+    color: white;
+}
+
+footer section{
+    width: 21%;
+    margin: 10px 30px;
+    padding: 15px;
+    float: left;
+}
+footer section h3{
+    font-family: 'Lobster Two';
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+hr{
+    color:  #A96D98;
+    margin: 5px 0px;
+}
+
+.footer-block-content{
+    padding: 10px 0px 0px;
+}
+
+.footer-block-content ul li:first-child{
+    padding-top: 0px;
+}
+
+.footer-block-content ul li{
+    clear: both;
+    border-bottom: 1px dashed #8a8a8a;
+    padding: 20px 0 10px;
+}
+
+.footer-block-content ul li::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.footer-block-content ul li .day{
+    float: left;
+}
+
+.footer-block-content ul li .hour{
+    float: right;
+}
+
+footer section ul{
+    padding-left: 0px;
+}
+footer section ul li{
+    padding: 10px 0px;
+}
+
+.footer-block ul li i{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: #7D726C;
+    text-align: center;
+    border-radius: 4px;
+    /* margin-right: px; */
+    margin-top: 5px;
+}
+
+#widget-social {
+    display: inline-block;
+    margin: 4px;
+}
+
+#widget-social ul li{
+    display: inline-block;
+}
+
+#widget-social i{
+    font-size: 30px;
+    margin: 3px;
+}
+
+.social-icons .list-inline a i:hover {
+    opacity: 0.75;
+}
+
+.facebook-social a i {
+    background-color: #395AA1;
+}
+
+.google-social a i {
+    background-color: #46B0E4;
+}
+
+.youtube-social a i {
+    background-color: red;
+}
+.twitter-social a i {
+    background-color: #46B0E4;
+}
+
+.instagram-social a i{
+    background-color: rebeccapurple;
+}
+
+.message-social a i{
+    background-color: #0084FF;
+}
+
+.li-social i {
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 19px;
+}
+
+.footer-block .form-list textarea {
+    padding-top: 15px;
+}
+.footer-block .form-list input,  .footer-block .form-list textarea {
+    padding: 10px 15px;
+    color: white;
+    font-style: italic;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-transform: capitalize;
+    height: 35px;
+    width: 100%;
+    outline: none;
+}
+
+.footer-block .form-list .wide .input-box textarea {
+    height: 145px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.form-list li{
+    margin-bottom: 3px;
+}
+
+.form-list li .feild{
+    margin-bottom: 10px;
+}
+
+.footer-block .buttons-set button span{
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-block .buttons-set button.button{
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 10px;
+    overflow: visible;
+    width: auto;
+    border: 0;
+    cursor: pointer;
+    height: 35px;
+    padding: 0 30px;
+    font-size: 16px;
+    white-space: nowrap;
+    outline: none;
+}
+
+.footer-block .buttons-set button.button:hover{
+    background-color: #FE9705;
+    color: white;
+}
+
+.clear-fix{
+    content:"";
+    clear: both;
+}
+
+
+/* MOBILE */
+
+.mobile-menu-icon{
+    width: 100%;
+    display: none;
+}
+
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1845em){
+    .Logo img{
+        width: 150px;
+    }
+    .cart-info,.Logo, .navholder{
+        display: none;
+    }
+    
+    .mobile-menu-icon .menu-logo img {
+        width: 40%;
+        float: left;
+        margin-left: 30px;
+    }
+    
+    .mobile-menu-icon .nav-login,.cart-targets{
+        font-size: 25px;
+        float: right;
+        margin: 2px;
+        background-color: red;
+        padding: 10px;
+    }
+    
+    .mobile-menu-icon .inner_Search{
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    
+    .mobile-menu-icon .inner_Search input{
+        padding: 5px 50px;
+    }
+    
+    /* PHẦN THỰC ĐƠN */
+    
+
+    .content img{
+        width: 200px;
+        height: 150px;
+    }
+    .content h2{
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    .content .Thuc-Don{
+        margin: 0px;
+        width: 10%;
+
+    }
+
+    /* TIN TỨC */
+
+
+    .content .info_TinTuc .Tin-tuc{
+        width: 100%;
+        margin: 0px;
+     }
+     .content .info_TinTuc .Tin-tuc img{
+         float: left;
+         margin-right: 10px;
+     }
+
+    
+  /* FOOTER */
+    .column-item{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+    
+    
+}
+
+/* Mobile & Table: width < 1024px */
+@media only screen and (max-width: 63.9375em){
+    .mobile-menu-icon{
+        display: block;
+    }
+    
+    .footer{
+        width: 100%;
+    }
+}
+
+/* Table: width >=740 and width < 10424px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .mobile-menu-icon{
+        width: 100%;
+        display: none;
+    }
+    
+    .column-item{
+        width: 33.333%;
+        margin: 10px;
+        margin-left: 10%;
+    }
+}

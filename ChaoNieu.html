@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cháo Niêu</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/CTMonAn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- PHẦN HEADER -->
+    <header class="header">
+        <div class="Logo">
+            <img src="images/Logo.jpg" alt="Logo.jpg">
+        </div>
+        <div class="cart-info hidden-xs">
+            <a class="cart-link" href="GioHang.html">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <div class="navholder">
+            <nav id="subnav">
+                <ul class="Dang-Ky">
+                    <li><a href=""><i class="fas fa-phone-alt">0963104800</i></a></li>
+                    <li><a href="">ĐĂNG KÝ</a></li>
+                    <li><a href="Login.html">ĐĂNG NHẬP</a></li>
+                </ul>
+            </nav>
+            <div class="header-line">
+                <p>Miễn phí vẫn chuyển <span class="mar-15">ĐƠN HÀNG TRÊN 500K</span></p>
+            </div>
+            <div class="search-bar">
+                <div class="inner_Search">
+                    <form action="" method="POST">
+                        <input type="search" placeholder="Tìm kiếm">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                <li>
+                    <a href="ThucDon.html">Thực đơn</a>
+                    <ul>
+                        <li><a href="ThucDonMonBanh.html">Bánh</a></li>
+                        <li><a href="ThucDonMonChao.html">Cháo</a></li>
+                        <li><a href="ThucDonMonBun.html">Bún</a></li>
+                        <li><a href="ThucDonMonNuong.html">Nướng</a></li>
+                        <li><a href="ThucDonMonLau.html">Lẩu</a></li>
+                        <li><a href="ThucDonMonHap.html">Hấp</a></li>
+                    </ul>
+                </li>
+                <li><a href="TinTuc.html">Tin tức</a></li>
+                <li><a href="DatHang.html">Đặt hàng</a></li>
+                <li><a href="LienHe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <article>
+            <h4>
+                <a href="index.html">TRANG CHỦ</a> 
+                <a href="BunThang.html">>> CHÁO NIÊU</a>
+            </h4>
+        </article>
+        <article>
+            <div class="main__product">
+                <div class="main__product-img">
+                    <img src="images/Chao-Nieu.jpg" alt="Cháo Niêu">
+                </div>
+                <div class="main__product-info">
+                    <p><span>Cháo Niêu</span></p><br>
+                    <p class="price">25 000 VND</p><br>
+                    <p>
+                    </p><br>
+                    <div class="quantity-box clearfix">
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                        <input type="button" value="-" class="qtyminus"><br>
+                        <input type="button" value="+" class="qtyplus">
+                    </div>
+                    <div class="row">
+                        <a href="DatHang.html">
+                            <i class="fas fa-shopping-basket"></i>
+                            <input type="button" value="Thêm vào giỏ" class="DatMua">
+                        </a> 
+                        <a href="DatHang.html">
+                            <i class="fas fa-check"></i>
+                            <input type="button" value="Mua ngay" class="MuaNgay">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div role="tabpanel" class="product-comment">
+                <ul class="nav visible-lg visible-md" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#mota" data-scy="scroll" data-target="#mota" aria-controls="mota" role="tab">MÔ TẢ SẢN PHẨM</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#binhluan" data-scy="scroll" data-target="#binhluan" aria-controls="binhluan" role="tab">BÌNH LUẬN</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#like" data-scy="scroll" data-target="#like" aria-controls="like" role="tab">MÓN ĂN KHÁC</a>
+                    </li>
+                </ul>
+                
+                <!-- MÔ TẢ -->
+                <div id="mota">
+                    <div class="product-description-wrapper">
+                        <p><strong>Cháo niêu</strong> sườn chinh phục thực khách ngay khi được đem lên bàn ăn. 
+                            Mùi thơm lừng tỏa ra từ niêu cháo nghi ngút khói làm thực khách tỉnh cả người. 
+                            Cháo trong niêu còn sôi lục bục đầy mời gọi. Chỉ cần nếm thìa đầu tiên là thấy ngây ngất bởi hạt gạo dẻo ngọt và vị ngậy, bùi của sườn hòa quyện trong món cháo sánh mịn, đậm đà.
+                        </p>
+                        <p><img src="images/BunCha.jpg" alt=""></p>
+                        <p>
+                            Gạo nấu cháo gồm gạo tẻ và gạo nếp được trộn theo tỉ lệ nhất định, đều phải là loại gạo mới, được vo sạch. 
+                            Nước nấu cháo là nước xương ninh lửa nhỏ qua một đêm. Gạo được cho vào nước xương nấu cho nở mềm, người nấu phải khuấy đều tay, canh chừng cho cháo có độ sánh mịn vừa đẹp, không đặc quá hoặc loãng quá.
+                            Chất ngọt từ tủy xương chỉ cần nhìn bằng mắt cũng đủ thấy ở màu nâu sóng sánh của cháo. Cả nồi cháo dậy lên hương vị thơm ngọt tự nhiên, bùi ngậy hấp dẫn. 
+                            Khi đã sẵn sàng, cháo sẽ được múc vào từng chiếc niêu đất đen bóng, trông gọn, đẹp, ngon lành.
+                        </p>
+                        <p>Niêu cháo được thêm vào sườn sụn hoặc gan, bầu dục… theo yêu cầu của khách, rồi đun sôi thật khéo sao cho đem lên bàn vẫn còn sôi lụp bụp. 
+                            Thực khách sẽ thấy được từng dẻ sườn non còn nguyên miếng, nhưng khẽ chạm vào là lớp thịt tơi ra, mềm xốp.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- BÌNH LUẬN -->
+                <div id="binhluan">
+                    <div class="title-bl">
+                        <h2>Bình luận</h2>
+                    </div>
+                    <div class="product-comment-fb">
+                        <div class="title">
+                            <p class="number-comment"><strong>0 bình luận</strong></p>
+                            <p class="SapXep">Sắp xếp theo
+                                <select name="Sắp xếp" id="Sắp xếp">
+                                    <option value="Cũ nhất">Cũ nhất</option>
+                                    <option value="Mới nhất">Mới nhất</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <img src="images/icon.PNG" alt="icon">
+                            <table>
+                                <tr>
+                                    <td colspan="2"><textarea name="" id="" cols="124" rows="3"></textarea></td>
+                                </tr>
+                                <tr style="height: 50px">
+                                    <td><input type="checkbox" name="" id=""> Cũng đăng lên facebook</td>
+                                    <td style="text-align: right;"><a href=""><input type="button" value="Đăng"></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="Plugin">
+                            <i class="fab fa-facebook-f"></i>
+                            <a href="">Plugin bình luận trên facebook</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MÓN ĂN KHÁC -->
+                <div id="like">
+                    <div class="title-bl">
+                        <h2>Món ăn khác</h2>
+                    </div>
+                    <div class="row product-list">
+                        <div class="owl-item">
+                            <a href="BunRieuCua.html"><img src="images/Bun-Rieu-Cua.jpg" alt="Bun-Riêu-Cua"></a>
+                            <div class="">
+                                <p>
+                                    <p class="name"><a href="BunRieuCua.html">Bún riêu cua</a></p> 
+                                    <p class="price"><span>20.000 VND</span></p>
+                                </p>
+                                <p><strike></strike></p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <a href=""><img src="images/Chao-Ga.jpg" alt="Cháo gà"></a>
+                            <div class="">
+                                <p>
+                                    <p class="name"><a href="">Cháo gà</a></p> 
+                                    <p class="price"><span>20.000 VND</span></p>
+                                </p>
+                                <p><strike></strike></p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <a href="NemRan.html"><img src="images/Nem-Ran.jpg" alt="Nem rán"></a>
+                            <div class="">
+                                <p>
+                                    <p class="name"><a href="NemRan.html">Nem rán</a></p> 
+                                    <p class="price"><span>20.000 VND</span></p>
+                                </p>
+                                <p><strike></strike></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <div class="clear-fix"></div>
+    <!-- Phần footer -->
+    <footer>
+        <section>
+            <h3>Thời gian</h3>
+            <hr>
+            <div class="footer-block-content">
+                <ul>
+                    <li>
+                        <span class="day">Thứ 2</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 3</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 4</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 5</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h3>Thông tin</h3>
+            <hr>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                <li><a href="ThucDon.html">Thực đơn</a></li>
+                <li><a href="TinTuc.html">Tin tức</a></li>
+                <li><a href="LienHe.html">Liên hệ</a></li>		
+            </ul>
+        </section>
+        <section>
+            <h3>Liên hệ</h3>
+            <hr>
+            <div class="footer-block">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i> Tầng 9 - 18 Lý Thường Kiệt - Hà Nội
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i> 
+                        nguyencuson28102000@gmail.com
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i> 
+                        0963104800
+                    </li>
+                </ul>
+            </div>
+            <div id="widget-social" class="social-icons">
+                <ul class="list-inline">
+                    <li class="li-social facebook-social">
+                        <a target="_blank" href="#" class="social-wrapper facebook">
+                            <span class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social youtube-social">
+                        <a target="_blank" href="#" class="social-wrapper youtube">
+                            <span class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social google-social">
+                        <a target="_blank" href="#" class="social-wrapper google-plus">
+                            <span class="social-icon">
+                                <i class="fab fa-google-plus-g"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social twitter-social">
+                        <a target="_blank"  href="#" class="social-wrapper twitter">
+                            <span class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social instagram-social">
+                        <a target="_blank"  href="#" class="social-wrapper instagram">
+                            <span class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social message-social">
+                        <a target="_blank"  href="#" class="social-wrapper message">
+                            <span class="social-icon">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h3>Gửi liên hệ</h3>
+            <hr>
+            <div class="footer-block">
+                <form action="/contact" method="POST">
+                    <div class="form-wraper">
+                        <ul class="form-list">
+                            <li class="feilds">
+                                <div class="feild">
+                                    <div class="input-box">
+                                        <input type="text" name="text" id="text" placeholder="Tên Của Bạn...">
+                                    </div>
+                                </div>
+                                <div class="feild">
+                                    <div class="input-box">
+                                        <input type="email" name="contact[email]" id="email" placeholder="Email của bạn...">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="wide feild">
+                                <div class="input-box">
+                                    <textarea name="contact[body]" id="" cols="10" rows="7" placeholder="Viết bình luận..."></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buttons-set">
+                        <button type="submit" title="Send" class="button">
+                            <span>Gửi</span>
+                        </button>
+                        <button type="reset" class="button" value="Reset">
+                            <span>Hủy</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="clear-fix"></div>
+    </footer>
+</body>
+</html>

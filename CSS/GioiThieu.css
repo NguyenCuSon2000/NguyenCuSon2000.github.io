@@ -1,0 +1,130 @@
+section.GioiThieu{
+    width: 1300px;
+    min-height: 300px;
+    margin: auto;
+}
+
+.left{
+    width: 25%;
+    padding-top: 30px;
+    float: left;
+}
+
+.content a:hover{
+    color: #FE9705;
+}
+
+.Danh-muc, .Mon-an, .Luot-Truy_Cap{
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+#menu-blog li:first-child p i.fa-user{
+    color: orange;
+}
+
+#menu-blog li:nth-child(2) p i.fa-user{
+    color: blue;
+}
+
+#menu-blog li:last-child p i.fa-user{
+    color: red;
+}
+
+.title{
+    position: relative;
+    margin: 0 40px 0px 0;
+    line-height: 36px;
+    margin-top: 0px;
+    padding: 10px 0;
+    font-size: 34px;
+    color: #444444;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+
+#menu-blog>li {
+    border-bottom: 1px dashed #c9c9c9;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+
+.news-menu #menu-blog li.active a {
+    color: #d71e1e;
+}
+
+
+.seller-item {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    border-bottom: 1px dashed #c9c9c9;
+    padding: 30px 0 20px;
+}
+
+.sellers-img img{
+     width: 150px;
+     height: 120px;
+     border-radius: 5px;
+}
+
+.seller-item .sellers-img {
+    float: left;
+    margin: 0 55px 0 0;
+    width: 100px;
+}
+
+.product-content h5 a{
+    color: #444444;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.product-content h5 p span{
+    color: #FE9705 ;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.product-content h5 a:hover{
+    color: #FE9705;
+}
+
+.product-content {
+    background-color: #fff;
+    overflow: hidden;
+    text-align: left;
+}
+
+.right{
+    float: right;
+    width: 70%;
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+
+.header h1{
+    font-size: 34px;
+    color: #444444;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+
+.right .content-page {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right .content-page img{
+    width: 100%;
+    margin: 10px 5px;
+}
+
+.right .content-page p{
+    margin: 10px;
+}

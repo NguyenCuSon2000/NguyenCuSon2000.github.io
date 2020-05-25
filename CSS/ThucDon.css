@@ -1,0 +1,176 @@
+.left{
+    width: 25%;
+    padding-top: 30px;
+    float: left;
+}
+
+.content a:hover{
+    color: #FE9705;
+}
+
+.Danh-muc, .Mon-an, .Luot-Truy_Cap{
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+#menu-blog li:first-child p i.fa-user{
+    color: orange;
+}
+
+#menu-blog li:nth-child(2) p i.fa-user{
+    color: blue;
+}
+
+#menu-blog li:last-child p i.fa-user{
+    color: red;
+}
+
+.title{
+    position: relative;
+    margin: 0 40px 0px 0;
+    line-height: 36px;
+    margin-top: 0px;
+    padding: 10px 0;
+    font-size: 34px;
+    color: #444444;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+
+#menu-blog>li {
+    border-bottom: 1px dashed #c9c9c9;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+
+.news-menu #menu-blog li.active a {
+    color: #d71e1e;
+}
+
+
+.seller-item {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    border-bottom: 1px dashed #c9c9c9;
+    padding: 30px 0 20px;
+}
+
+.sellers-img img{
+     width: 150px;
+     height: 120px;
+     border-radius: 5px;
+}
+
+.seller-item .sellers-img {
+    float: left;
+    margin: 0 55px 0 0;
+    width: 100px;
+}
+
+.product-content h5 a{
+    color: #444444;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.product-content h5 p span{
+    color: #FE9705 ;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.product-content h5 a:hover{
+    color: #FE9705;
+}
+
+.product-content {
+    background-color: #fff;
+    overflow: hidden;
+    text-align: left;
+}
+
+.CT_Thuc-Don h2{
+    text-align: center;
+    margin: 20px 0px;
+    color: #444444;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.content img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+section.content article div.CT_Thuc-Don{
+    width: 400px;
+    margin-right: 35px;
+    margin-left: 1px;
+    margin-top: 10px;
+    padding:5px;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+section.content article div.CT_Thuc-Don p a{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 5px;   
+    font-size: 25px;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+
+section.content article div.CT_Thuc-Don p a:hover{
+    color: #FE9705;
+}
+
+.content input[type="button"]{
+    width: 100px;
+    height: 50px;
+    margin: 10px 5px 20px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid sienna;
+    background-color: #FE9705;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+    font-size: 20px;
+}
+.button input:hover{
+    background-color: violet;
+    cursor: pointer;
+}
+section.content article div.CT_Thuc-Don p span{
+    color: #FE9705;
+    font-family: 'Lobster Two';
+    font-weight: 700px;
+    font-size: 20px;
+}
+
+
+
+.right{
+    float: right;
+    width: 70%;
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+
+
+.header h1{
+    font-size: 34px;
+    color: #444444;
+    font-family: 'Lobster Two';
+    font-weight: 700;
+}
+
+
+
