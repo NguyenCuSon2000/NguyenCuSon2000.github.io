@@ -13,8 +13,8 @@ a{
     color: black;
 }
 body{
-    width: 100%;
-    margin: 0px auto;
+    /* width: 1300px; */
+    margin: auto;
 }
 /* PHẦN HEADER */
 .header{
@@ -306,8 +306,8 @@ section.content{
     text-align: center;
     margin: 20px 0px;
     color: #444444;
-    font-family: 'Lobster Two';
-    font-weight: 700;
+    /* font-family: 'Lobster Two'; */
+    font-weight: 700; 
     font-size: 30px;
 }
 
@@ -328,7 +328,7 @@ section.content{
 
 .content img:hover{
     transform: scale(1.05);
-    transition: 1s;
+    transition: 0.3s;
 }
 section.content article div.Thuc-Don{
     width: 33%;
@@ -367,7 +367,7 @@ section.content article div.Thuc-Don p a:hover{
     outline: none;
 }
 .button input:hover{
-    background-color: violet;
+    background-color: red;
     cursor: pointer;
 }
 section.content article div.Thuc-Don p span{
@@ -451,7 +451,7 @@ section.content article div.Khuyen-mai p span{
 
 .Tin-tuc img:hover{
     transform: scale(1.05);
-    transition: 1s;
+    transition: 0.3s;
 }
 section.content article div.Tin-tuc{
     width: 20%;
@@ -465,13 +465,14 @@ section.content article div.Tin-tuc{
 section.content article div.Tin-tuc p{
     padding-left: 0px;
     padding-top: 2px;
-    
+    margin: 5px 0px;
 }
 
 section.content article div.Tin-tuc p a{
     font-family: 'Lobster Two';
     font-weight: 700;
     font-size: 20px;
+    
 }
 
 .Tin-tuc p a:hover{
@@ -612,7 +613,6 @@ footer section ul li{
 .footer-block .form-list input,  .footer-block .form-list textarea {
     padding: 10px 15px;
     color: white;
-    font-style: italic;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực đơn món nướng</title>
+    <title>Liên hệ</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/ThucDon.css">
+    <link rel="stylesheet" href="CSS/LienHe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./font/fontawesome-free-5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -17,6 +17,31 @@
         <div class="Logo">
             <img src="images/Logo.jpg" alt="Logo.jpg">
         </div>
+        
+        <div class="mobile-menu-icon">
+            <div class="menu-logo">
+                <img src="images/Logo.jpg" alt="Logo.jpg">
+            </div>
+            <div class="cart-targets">
+                <a href="" title="Giỏ hàng" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="nav-login">
+                <a href="" title="Tài khoản" class="cart">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+            <div class="search">
+                <div class="inner_Search">
+                    <form action="" method="POST">
+                        <input type="search" placeholder="Tìm kiếm">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
         <div class="cart-info hidden-xs">
             <a class="cart-link" href="GioHang.html">
                 <i class="fas fa-shopping-cart"></i>
@@ -27,7 +52,7 @@
                 <ul class="Dang-Ky">
                     <li><a href=""><i class="fas fa-phone-alt">0963104800</i></a></li>
                     <li><a href="">ĐĂNG KÝ</a></li>
-                    <li><a href="">ĐĂNG NHẬP</a></li>
+                    <li><a href="Login.html">ĐĂNG NHẬP</a></li>
                 </ul>
             </nav>
             <div class="header-line">
@@ -62,145 +87,66 @@
                 <li><a href="LienHe.html">Liên hệ</a></li>
             </ul>
         </nav>
-        <div class="header-banner">
-            <a href=""><img src="images/TrangAn-banner.jpg" alt="TrangAn-banner.jpg"></a>
-        </div>
     </header>
     
-    <!-- PHẦN NỘI DUNG -->
-    <section class="content">
-        <article class="left">
-            <!-- DANH MỤC -->
-            <div class="Danh-muc">
-                <div class="block-title">
-                    <h4 class="title">Danh mục</h4>
-                </div>
-                <ul class="nav" id="menu-blog">
-                    <li class="first">
-                        <a href="index.html"><span>Trang chủ</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>Giới thiệu</span></a>
-                    </li>
-                    <li>
-                        <a href="ThucDon.html"><span>Thực đơn</span></a>
-                    </li>
-                    <li class="current active">
-                        <a href="TinTuc.html"><span>Tin tức - sự kiện</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>Đặt hàng</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>Liên hệ</span></a>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- MÓN ĂN MỚI NHẤT -->
-            <div class="Mon-an">
-                <div class="block-title">
-                    <h4 class="title">Món ăn mới nhất</h4>
-                </div>
-                <div class="content-latest">
-                    <!-- Begin Danh mục -->
-                    <div class="article seller-item">
-                        <div class="sellers-img">
-                            <a href="" class="product-block-img content-img clearfix">
-                                <img src="images/Bun-Dau-Mam-Tom.jpg" alt="Bún đậu mắm tôm">
-                            </a>
-                        </div>
-                        <div class="product-content">
-                            <h5>
-                                <a href="BunDauMamTom.html">Bún đậu mắm tôm</a><br>
-                                <p><span>30 000 VND</span></p>
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="article seller-item">
-                        <div class="sellers-img">
-                            <a href="" class="product-block-img content-img clearfix">
-                                <img src="images/Bun-Dau-Mam-Tom.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-content">
-                            <h5>
-                                <a href="ChaCa.html">Chả cá</a><br>
-                                <p><span>30 000 VND</span></p>
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="article seller-item">
-                        <div class="sellers-img">
-                            <a href="" class="product-block-img content-img clearfix">
-                                <img src="images/Ga-Nuong.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-content">
-                            <h5>
-                                <a href="ChaoNieu.html">Cháo Niêu</a><br>
-                                <p><span>20 000 VND</span></p>
-                            </h5>
-                        </div>
-                    </div>
-                    <!-- End Danh mục blog -->
-                </div>
+    <section class="page_main">
+        <article>
+            <h1 class="title">Liên hệ</h1>
+        </article>
+        <article>
+            <div class="map map_container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6264.496412992482!2d105.80179212007153!3d20.99697179688257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8ab70ef613%3A0xad7d5740f2dd2bf8!2z4bqobSBUaOG7sWMgVHLDoG5nIEFu!5e0!3m2!1svi!2s!4v1590504303763!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </article>
-        
-        <!-- PHẦN THỰC ĐƠN -->
-        <article class="right">
-            <span class="header page">
-                <h1>Thực đơn món nướng</h1>
-            </span>
-            <article>
-                <div class="CT_Thuc-Don">
-                    <a href=""><img src="images/Ga-Nuong.jpg" alt="Gà nướng"></a>
-                    <p><a href="">Gà Nướng</a></p>
-                    <p><span>100.000 VND</span></p>
-                    <!-- <div class="button">
-                        <a href="" class="link"><input type="button" value="Đặt hàng"></a>
-                        <a href="" class="link"><input type="button" value="Chi tiết"></a>
-                    </div> -->
+        <article class="container">
+            <div class="left">
+                <div class="title">
+                    <h4>Viết nhận xét</h4>
                 </div>
-                <div class="CT_Thuc-Don">
-                    <a href=""><img src="images/Tom-Nuong.jpg" alt="Tôm nướng"></a>
-                    <p><a href="">Tôm Nướng</a></p>
-                    <p><span>150.000 VND</span></p>
-                  
+                <div class="info_container">
+                    <form action="" method="GET/POST">
+                        <label for="fname">Họ Và Tên</label>
+                        <input type="text" id="name" name="name" placeholder="Nhập họ và tên...">
+                        
+                        <label for="lname">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Nhập email...">
+                        
+                        <label for="country">Viết bình luận</label><br>
+                        <textarea name="textarea" id="comment" class="text" cols="30" rows="5" placeholder="Viết bình luận..."></textarea><br>
+                        <input type="submit" value="Gửi liên hệ">
+                    </form>
                 </div>
-                <div class="CT_Thuc-Don">
-                    <a href=""><img src="images/Muc-Nuong.jpg" alt="Mực nướng"></a>
-                    <p><a href="">Mực Nướng</a></p>
-                    <p><span>200.000 VND</span></p>
-                   
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h4>Liên hệ chúng tôi</h4>
                 </div>
-                <div class="CT_Thuc-Don">
-                    <a href=""><img src="images/Suon-Nuong.jpg" alt="Sườn nướng"></a>
-                    <p><a href="">Sườn Nướng</a></p>
-                    <p><span>120.000 VND</span></p>
-                    
+                <div class="info_LienHe">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Tầng 9 - 18 Lý Thường Kiệt - Hà Nội
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            nguyencuson28102000@gmail.com
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            0963104800
+                        </li>
+                    </ul>
                 </div>
-                <div class="CT_Thuc-Don">
-                    <a href=""><img src="images/Cha-Nuong.jpg" alt="Chả nướng"></a>
-                    <p><a href="">Chả Nướng</a></p>
-                    <p><span>50.000 VND</span></p>
-                    
-                </div>
-                <div class="CT_Thuc-Don">
-                    <a href=""> <img src="images/Vit-nuong.jpg" alt="Vịt nướng"></a>
-                    <p><a href="">Vịt Nướng</a></p>
-                    <p><span>125.000 VND</span></p>
-                   
-                </div>
-            </article>
+            </div>
         </article>
     </section>
+    
+    
     <div class="clear-fix"></div>
     
     <!-- PHẦN FOOTER -->
     <footer>
-        <section>
+        <section class="column-item">
             <h3>Thời gian</h3>
             <hr>
             <div class="footer-block-content">
@@ -224,7 +170,7 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="column-item">
             <h3>Thông tin</h3>
             <hr>
             <ul>
@@ -235,7 +181,7 @@
                 <li><a href="LienHe.html">Liên hệ</a></li>		
             </ul>
         </section>
-        <section>
+        <section class="column-item">
             <h3>Liên hệ</h3>
             <hr>
             <div class="footer-block">
@@ -300,7 +246,7 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="column-item">
             <h3>Gửi liên hệ</h3>
             <hr>
             <div class="footer-block">

@@ -61,7 +61,7 @@
   font-size: 16px;
   font-family: 'Poppins',sans-serif;
 }
-.space{
+.space, .email{
   margin-top: 16px;
 }
 .show{
@@ -113,7 +113,7 @@
   color: white;
   margin: 0 0 20px 0;
 }
-.facebook,.instagram{
+.facebook,.google{
   width: 100%;
   height: 45px;
   line-height: 45px;
@@ -124,14 +124,14 @@
   background: #4267B2;
   border: 1px solid #3e61a8;
 }
-.instagram{
-  background: #E1306C;
+.google{
+  background: #EA230F;
   border: 1px solid #df2060;
 }
 .facebook:hover{
   background: #3e61a8;
 }
-.instagram:hover{
+.google:hover{
   background: #df2060;
 }
 .links i{

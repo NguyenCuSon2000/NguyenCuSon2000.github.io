@@ -1,3 +1,8 @@
+.tin-tuc {
+    width: 1290px;
+    margin: auto;
+}
+
 .left{
     width: 26%;
     padding-top: 30px;
@@ -12,12 +17,7 @@
     padding-left: 0;
     margin-bottom: 20px;
 }
-.tin-tuc{
-    /* padding-right: 500px; */
-    padding-left: 253px;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 
 .title{
     position: relative;

@@ -23,6 +23,7 @@
     border-spacing: 0px;
     text-align: center;
     margin-left: 150px;
+    margin-bottom: 60px;
 }
 
 .GioHang table th{
@@ -50,23 +51,14 @@
     font-size: 20px;
 }
 
-.Ghi-Chu{
-    margin-left: 145px;
-}
 
-.Ghi-Chu label{
+.buttons {
+    margin-right: 160px;
     font-family: 'Lobster Two';
     font-weight: 700;
 }
 
-.Ghi-Chu textarea{
-    border-radius: 4px;
-    height: 70px;
-    border-color: #DDD7D7;
-}
-
-.buttons{
-    margin-right: 160px;
+.buttons a button{
     font-family: 'Lobster Two';
     font-weight: 700;
 }

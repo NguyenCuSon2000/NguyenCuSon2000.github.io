@@ -137,7 +137,10 @@ input#Quantity {
     display: inline-block;
     padding: 10px;
     font-size: 20px;
+    
 }
+
+
 
 .product-comment .nav {
     width: 100%;
@@ -276,8 +279,8 @@ input#Quantity {
 }
 
 .owl-item img:hover{
-    transform: scale(1.05);
-    transition: 1s;
+    transform: scale(1.15);
+    transition: 0.3s;
 }
 .product-list .owl-item{
     width: 33%;
