@@ -58,7 +58,8 @@
     font-weight: 700;
 }
 
-.buttons a button{
+.buttons button a{
+    color: #fff;
     font-family: 'Lobster Two';
     font-weight: 700;
 }

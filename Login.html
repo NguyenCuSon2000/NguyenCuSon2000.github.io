@@ -6,41 +6,55 @@
     <title>Login</title>
     <link rel="stylesheet" href="CSS/Login.css">
     <script>
-        const pass_field = document.querySelector('.pass-key');
-        // const showBtn = document.querySelector('.show');
-        showBtn.addEventListener('click', function(){
-            if(pass_field.type === "password"){
-                pass_field.type = "text";
-                showBtn.textContent = "HIDE";
-                showBtn.style.color = "#3498db";
-            }else{
-                pass_field.type = "password";
-                // showBtn.textContent = "SHOW";
-                showBtn.style.color = "#222";
+        // const pass_field = document.querySelector('.pass-key');
+        // showBtn.addEventListener('click', function(){
+        //     if(pass_field.type === "password"){
+        //         pass_field.type = "text";
+        //         showBtn.textContent = "HIDE";
+        //         showBtn.style.color = "#3498db";
+        //     }else{
+        //         pass_field.type = "password";
+        //         showBtn.style.color = "#222";
+        //     }
+        // });
+        // Kiểm tra email
+        function checkEmail_Onblur() {
+            mail = formLogin.email.value;
+            var loiEmail=document.getElementById("IDemail");
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            kq = filter.test(mail);
+            if(mail=="") {
+                loiEmail.innerHTML = "Email không được bỏ trống !";
+                formLogin.email.focus();
+                return;
             }
-        });
-
-        function eyeF(){
-            var matkhau = document.getElementById('password').type="text";
+            loiEmail.innerHTML="";
+            
+            if (!kq) {
+               loiEmail.innerHTML = "Hãy nhập địa chỉ email hợp lệ.\nExample@gmail.com";
+                formLienHe.email.focus();
+                return;
+            }
+            loiEmail.innerHTML="";
+           
         }
-        
-    </script>    
+    </script>
+    
     <script src=" https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <div class="bg-img">
         <div class="content">
             <header>Login Form</header>
-            <form action="#">
+            <form action="#" name="formLogin" id="formLogin">
                 <div class="field">
                     <span class="fa fa-user"></span>
-                    <input type="text" required="" placeholder="Email or Phone">
+                    <input type="text" required="" id="email" name="email" placeholder="Email" onblur="checkEmail_Onblur();">
                 </div>
+                <span id="IDemail" style="color:#FF0000; font-size:18px"></span>
                 <div class="field space">
                     <span class="fa fa-lock"></span>
                     <input type="password" id="password" class="pass-key" required="" placeholder="Password">
-                    <!-- <span class="show">SHOW</span> -->
-                    <!-- <i class="fa fa-eye" id="eye" onclick="eyeF()" aria-hidden="true"></i> -->
                 </div>
                 <div class="pass">
                     <a href="#">Forgot Password?</a>

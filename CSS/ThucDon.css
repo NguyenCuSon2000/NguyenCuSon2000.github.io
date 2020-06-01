@@ -8,9 +8,9 @@
     color: #FE9705;
 }
 
-.Danh-muc, .Mon-an, .Luot-Truy_Cap{
+.Danh-muc, .Mon-an,.Bai-viet, .Luot-Truy_Cap{
     padding-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #menu-blog li:first-child p i.fa-user{
@@ -72,7 +72,8 @@
     width: 100px;
 }
 
-.product-content h5 a{
+
+.Mon-an .product-content h5 a{
     color: #444444;
     font-family: 'Lobster Two';
     font-weight: 700;
@@ -114,7 +115,7 @@ section.content article div.CT_Thuc-Don{
     margin-right: 35px;
     margin-left: 1px;
     margin-top: 10px;
-    padding:20px;
+    padding:15px;
     float: left;
     text-align: center;
     margin-bottom: 10px;

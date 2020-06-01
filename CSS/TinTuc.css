@@ -76,6 +76,10 @@
     color: #FE9705;
 }
 
+.product-content span i{
+    margin-top: 5px;
+}
+
 .product-content {
     background-color: #fff;
     overflow: hidden;

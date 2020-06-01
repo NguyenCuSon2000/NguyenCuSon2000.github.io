@@ -10,6 +10,41 @@
     <link rel="stylesheet" href="./font/fontawesome-free-5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script>
+        // Kiểm tra họ tên
+        function hoten_Onblur() {
+            ht=formLienHe.name.value;
+            var loiht=document.getElementById("IDhoten");
+            
+            if(ht=="") {
+                loiht.innerHTML="Họ tên không được bỏ trống !";
+                formLienHe.name.focus();
+                return;
+            }
+            loiht.innerHTML="";
+        }
+
+        // Kiểm tra email
+        function checkEmail_Onblur() {
+            mail = formLienHe.email.value;
+            var loiEmail=document.getElementById("IDemail");
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            kq = filter.test(mail);
+            if(mail=="") {
+                loiEmail.innerHTML="Email không được bỏ trống !";
+                formLienHe.email.focus();
+                return;
+            }
+            loiEmail.innerHTML="";
+
+            if (!kq) {
+                loiEmail.innerHTML = "Hay nhap dia chi email hop le.\nExample@gmail.com";
+                formLienHe.email.focus();
+                return;
+            }
+            loiEmail.innerHTML="";
+        }
+    </script>
 </head>
 <body>
     <!-- PHẦN HEADER -->
@@ -51,7 +86,7 @@
             <nav id="subnav">
                 <ul class="Dang-Ky">
                     <li><a href=""><i class="fas fa-phone-alt">0963104800</i></a></li>
-                    <li><a href="">ĐĂNG KÝ</a></li>
+                    <li><a href="SignUp.html">ĐĂNG KÝ</a></li>
                     <li><a href="Login.html">ĐĂNG NHẬP</a></li>
                 </ul>
             </nav>
@@ -104,13 +139,15 @@
                     <h4>Viết nhận xét</h4>
                 </div>
                 <div class="info_container">
-                    <form action="" method="GET/POST">
+                    <form action="" method="GET/POST" name="formLienHe" id="formLienHe">
                         <label for="fname">Họ Và Tên</label>
-                        <input type="text" id="name" name="name" placeholder="Nhập họ và tên...">
+                        <input type="text" id="name" name="name" placeholder="Nhập họ và tên..." onblur="hoten_Onblur();">
+                        <span id="IDhoten" style="color:#FF0000; font-size:14px"></span><br>
                         
                         <label for="lname">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Nhập email...">
-                        
+                        <input type="text" id="email" name="email" placeholder="Nhập email..." onblur="checkEmail_Onblur();">
+                        <span id="IDemail" style="color:#FF0000; font-size:14px"></span><br>
+
                         <label for="country">Viết bình luận</label><br>
                         <textarea name="textarea" id="comment" class="text" cols="30" rows="5" placeholder="Viết bình luận..."></textarea><br>
                         <input type="submit" value="Gửi liên hệ">
@@ -122,10 +159,10 @@
                     <h4>Liên hệ chúng tôi</h4>
                 </div>
                 <div class="info_LienHe">
-                    <ul>
+                    <ul style="padding-left: 0px;">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            Tầng 9 - 18 Lý Thường Kiệt - Hà Nội
+                            511 Trần Khát Chân, Thanh Nhàn, Hai Bà Trưng, Hà Nội
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
@@ -187,7 +224,7 @@
             <div class="footer-block">
                 <ul>
                     <li>
-                        <i class="fas fa-home"></i> Tầng 9 - 18 Lý Thường Kiệt - Hà Nội
+                        <i class="fas fa-home"></i> 511 Trần Khát Chân - Thanh Nhàn - Hai Bà Trưng - Hà Nội
                     </li>
                     <li>
                         <i class="fas fa-envelope"></i> 

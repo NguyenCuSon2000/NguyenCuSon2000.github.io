@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh Đúc Nóng</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/CTMonAn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- PHẦN HEADER -->
+    <header class="header">
+        <div class="Logo">
+            <img src="images/Logo.jpg" alt="Logo.jpg">
+        </div>
+        <div class="cart-info hidden-xs">
+            <a class="cart-link" href="GioHang.html">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <div class="navholder">
+            <nav id="subnav">
+                <ul class="Dang-Ky">
+                    <li><a href=""><i class="fas fa-phone-alt">0963104800</i></a></li>
+                    <li><a href="SignUp.html">ĐĂNG KÝ</a></li>
+                    <li><a href="Login.html">ĐĂNG NHẬP</a></li>
+                </ul>
+            </nav>
+            <div class="header-line">
+                <p>Miễn phí vẫn chuyển <span class="mar-15">ĐƠN HÀNG TRÊN 500K</span></p>
+            </div>
+            <div class="search-bar">
+                <div class="inner_Search">
+                    <form action="" method="POST">
+                        <input type="search" placeholder="Tìm kiếm">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                    <li>
+                        <a href="ThucDon.html">Thực đơn</a>
+                        <ul>
+                            <li><a href="ThucDonMonBanh.html">Bánh</a></li>
+                            <li><a href="ThucDonMonChao.html">Cháo</a></li>
+                            <li><a href="ThucDonMonBun.html">Bún</a></li>
+                            <li><a href="ThucDonMonNuong.html">Nướng</a></li>
+                            <li><a href="ThucDonMonLau.html">Lẩu</a></li>
+                            <li><a href="ThucDonMonHap.html">Hấp</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="TinTuc.html">Tin tức</a></li>
+                    <li><a href="GioHang.html">Đặt hàng</a></li>
+                    <li><a href="LienHe.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <label for="nav__mobile-input"  class="nav__bars-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox"  name="" class="nav__input" id="nav__mobile-input">
+            <label for="nav__mobile-input" class="nav__overlay"></label>
+            <nav class="menu__mobile">
+                <label for="nav__mobile-input" class="nav__mobile-close">
+                    <i class="fas fa-times"></i>
+                </label>
+                
+                <ul class="nav__moble-list">
+                    <li><a href="index.html" class="nav__mobile-link">Trang chủ</a></li>
+                    <li><a href="GioiThieu.html" class="nav__mobile-link">Giới thiệu</a></li>
+                    <li>
+                        <a href="ThucDon.html" class="nav__mobile-link">Thực đơn</a>
+                        <ul>
+                            <li><a href="ThucDonMonBanh.html">Bánh</a></li>
+                            <li><a href="ThucDonMonChao.html">Cháo</a></li>
+                            <li><a href="ThucDonMonBun.html">Bún</a></li>
+                            <li><a href="ThucDonMonNuong.html">Nướng</a></li>
+                            <li><a href="ThucDonMonLau.html">Lẩu</a></li>
+                            <li><a href="ThucDonMonHap.html">Hấp</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="TinTuc.html" class="nav__mobile-link">Tin tức</a></li>
+                    <li><a href="GioHang.html" class="nav__mobile-link">Đặt hàng</a></li>
+                    <li><a href="LienHe.html" class="nav__mobile-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+    <section class="main">
+        <article>
+            <h4>
+                <a href="index.html">TRANG CHỦ</a> 
+                <a href="BunThang.html">>> BÁNH DÚC NÓNG</a>
+            </h4>
+        </article>
+        <article>
+            <div class="main__product">
+                <div class="main__product-img">
+                    <img src="images/BanhDucNong.jpg" alt="Bánh đúc nóng">
+                </div>
+                <div class="main__product-info">
+                    <p><span>Bánh Đúc Nóng</span></p><br>
+                    <p class="price">25 000 VND</p><br>
+                    <p class="main__product-desc">Cuối cùng Hà Nội cũng bước vào những ngày gió mùa se lạnh. Người ta đã phải mang những chiếc áo khoác mỏng trên đường trở về nhà lúc chiều tà. 
+                        Thời tiết này mà được ngồi trên chiếc ghế cóc, bưng bát bánh đúc nóng trên tay thì còn gì bằng. Lại đúng vào cái giờ tan ca, nắng tắt và cái bụng bắt đầu réo rắt sau một ngày dài học tập và làm việc. 
+                        Bát bánh đúc nóng hổi toả hương thơm phức chính là thức quà dân dã mà lại khiến tất cả các giác quan bừng tỉnh hơn bao giờ hết.
+                    </p><br>
+                    <div class="quantity-box clearfix">
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                        <input type="button" value="-" class="qtyminus"><br>
+                        <input type="button" value="+" class="qtyplus">
+                    </div>
+                    <div class="row">
+                        <a href="GioHang.html">
+                            <!-- <i class="fas fa-shopping-basket"></i> -->
+                            <input type="button" value="Thêm vào giỏ" class="DatMua">
+                        </a> 
+                        <a href="GioHang.html">
+                            <!-- <i class="fas fa-check"></i> -->
+                            <input type="button" value="Mua ngay" class="MuaNgay">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div role="tabpanel" class="product-comment" style="padding-left: 0px;">
+                <ul class="nav visible-lg visible-md" role="tablist" >
+                    <li role="presentation" class="active">
+                        <a href="#mota" data-scy="scroll" data-target="#mota" aria-controls="mota" role="tab">MÔ TẢ SẢN PHẨM</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#binhluan" data-scy="scroll" data-target="#binhluan" aria-controls="binhluan" role="tab">BÌNH LUẬN</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#like" data-scy="scroll" data-target="#like" aria-controls="like" role="tab">MÓN ĂN KHÁC</a>
+                    </li>
+                </ul>
+                
+                <!-- MÔ TẢ -->
+                <div id="mota">
+                    <div class="product-description-wrapper">
+                        <p>Cái sức sáng tạo của người Việt, đặc biệt là trong ẩm thực luôn là thứ đáng nể phục. 
+                            Bởi từ một món ăn, người ta lại thiên biến vạn hoá thành ngàn kiểu tuỳ vào nguyên liệu có sẵn hay khẩu vị từng vùng.
+                             Và bánh đúc cũng vậy. Không chỉ có bánh đúc thông thường (làm từ bột gạo), ta có cả bánh đúc lạc, bánh đúc ngô, bánh đúc hến, bánh đúc riêu cua,… 
+                            Trong vô vàn kiểu của “họ hàng hang hốc” nhà bánh đúc, <strong>bánh đúc nóng</strong> dường như nổi bật hơn cả. 
+                        </p>
+                        <p> 
+                            Thoạt nhìn bát <strong>bánh đúc nóng</strong> sẽ thấy gần giống bát cháo sườn hay cháo bột trẻ em. 
+                            Bánh đúc lỏng sền sệt, keo lại, múc ra vẫn có thể kéo thành sợi được. Thớ bánh mỏng nhưng vẫn kết dính với nhau. 
+                            Nhờ thế khi chan nước dùng vào (nước dùng là nước mắm chua ngọt) mà vẫn không làm loãng bánh.
+                        </p>
+                        <p>
+                            Một bát <strong>bánh đúc nóng</strong> không thể thiếu phần thịt băm mộc nhĩ, hành khô và rau mùi. 
+                            Tất cả hoà quyện và làm dậy thêm hương vị cho nhau. Người ta thường múc bánh đúc sền sệt vào chiếc bát nhỏ có miệng rộng, sau đó cho thịt băm mộc nhĩ, hành phi và rau mùi lên trên, cuối cùng chan nước dùng kèm thêm một chút dầu.
+                             Vị bùi ngậy của bánh đúc đặc, thêm chút đậm đà từ thịt băm, mùi thơm từ hành phi, rau mùi và vị chua ngọt của nước dùng hoà quyện với nhau tạo nên một món ăn hoàn hảo.
+                             Bát bánh đúc này mà có thêm chút tiêu bắc, ớt bột lại càng trở nên bắt miệng hơn bao giờ hết.
+                        </p>
+                       
+                        <p><img src="images/Banh-Duc-Nong.jpg" alt=""></p>
+                        <p>
+                            “Công thức” chung cho <strong>bánh đúc nóng</strong> thì là vậy, nhưng tuỳ sự biến tấu của từng hàng mà bát <strong>bánh đúc nóng</strong> cũng có đôi chút khác biệt. Một số hàng tập trung hương vị cho phần thịt xào đậm đà hơn, lại có nơi thì nêm nước dùng hơi ngọt nhẹ. 
+                            Nhiều quán còn thoả sức sáng tạo khi cho thêm mấy miếng đậu rán vào ăn cùng…
+                             Tuy nhiên, có thay đổi kiểu gì thì cũng chẳng thể phủ nhận rằng <strong>bánh đúc nóng</strong> vẫn rất ngon và quá thích hợp với thời tiết Hà Nội mùa thu hay mùa đông lạnh.  
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                <!-- BÌNH LUẬN -->
+                <div id="binhluan">
+                    <div class="title-bl">
+                        <h2>Bình luận</h2>
+                    </div>
+                    <div class="product-comment-fb">
+                        <div class="title">
+                            <p class="number-comment"><strong>0 bình luận</strong></p>
+                            <p class="SapXep">Sắp xếp theo
+                                <select name="Sắp xếp" id="Sắp xếp">
+                                    <option value="Cũ nhất">Cũ nhất</option>
+                                    <option value="Mới nhất">Mới nhất</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <img src="images/icon.PNG" alt="icon">
+                            <table>
+                                <tr>
+                                    <td colspan="2"><textarea name="" id="" cols="124" rows="3"></textarea></td>
+                                </tr>
+                                <tr style="height: 50px">
+                                    <td><input type="checkbox" name="" id=""> Cũng đăng lên facebook</td>
+                                    <td style="text-align: right;"><a href=""><input type="button" value="Đăng"></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="Plugin">
+                            <i class="fab fa-facebook-f"></i>
+                            <a href="">Plugin bình luận trên facebook</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MÓN ĂN KHÁC -->
+                <div id="like">
+                    <div class="title-bl">
+                        <h2>Món ăn khác</h2>
+                    </div>
+                    <div class="row product-list">
+                        <div class="owl-item">
+                            <a href="BunRieuCua.html"><img src="images/BunDauMamTom.jpg" alt="Bún đậu mắm tôm"></a>
+                            <div class="">
+                                <p>
+                                    <p class="name"><a href="BunDauMamTom.html">Bún Đậu Mắm Tôm</a></p> 
+                                    <p class="price"><span>30.000 VND</span></p>
+                                </p>
+                                <p><strike></strike></p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <a href="TomNuong.html"><img src="images/TomNuong.jpg" alt="Tôm nướng"></a>
+                            <div class="">
+                                <p>
+                                    <p class="name"><a href="TomNuong.html">Tôm Nướng</a></p> 
+                                    <p class="price"><span>150.000 VND</span></p>
+                                </p>
+                                <p><strike></strike></p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <a href="GaHap.html"><img src="images/GaHap.jpg" alt="Gà hấp"></a>
+                            <div class="">
+                                <p>
+                                    <p class="name"><a href="GaHap.html">Gà Hấp</a></p> 
+                                    <p class="price"><span>200.000 VND</span></p>
+                                </p>
+                                <p><strike></strike></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <div class="clear-fix"></div>
+    
+    <!-- Phần footer -->
+    <footer class="footer">
+        <section class="column-item">
+            <h3>Thời gian</h3>
+            <hr>
+            <div class="footer-block-content">
+                <ul>
+                    <li>
+                        <span class="day">Thứ 2</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 3</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 4</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Thứ 5</span>
+                        <span class="hour">8:00 - 21:00</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section  class="column-item">
+            <h3>Thông tin</h3>
+            <hr>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                <li><a href="ThucDon.html">Thực đơn</a></li>
+                <li><a href="TinTuc.html">Tin tức</a></li>
+                <li><a href="LienHe.html">Liên hệ</a></li>		
+            </ul>
+        </section>
+        <section  class="column-item">
+            <h3>Liên hệ</h3>
+            <hr>
+            <div class="footer-block">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i> 511 Trần Khát Chân - Thanh Nhàn - Hai Bà Trưng - Hà Nội
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i> 
+                        nguyencuson28102000@gmail.com
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i> 
+                        0963104800
+                    </li>
+                </ul>
+            </div>
+            <div id="widget-social" class="social-icons">
+                <ul class="list-inline">
+                    <li class="li-social facebook-social">
+                        <a target="_blank" href="#" class="social-wrapper facebook">
+                            <span class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social youtube-social">
+                        <a target="_blank" href="#" class="social-wrapper youtube">
+                            <span class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social google-social">
+                        <a target="_blank" href="#" class="social-wrapper google-plus">
+                            <span class="social-icon">
+                                <i class="fab fa-google-plus-g"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social twitter-social">
+                        <a target="_blank"  href="#" class="social-wrapper twitter">
+                            <span class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social instagram-social">
+                        <a target="_blank"  href="#" class="social-wrapper instagram">
+                            <span class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li-social message-social">
+                        <a target="_blank"  href="#" class="social-wrapper message">
+                            <span class="social-icon">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="column-item">
+            <h3>Gửi liên hệ</h3>
+            <hr>
+            <div class="footer-block">
+                <form action="/contact" method="POST">
+                    <div class="form-wraper">
+                        <ul class="form-list">
+                            <li class="feilds">
+                                <div class="feild">
+                                    <div class="input-box">
+                                        <input type="text" name="text" id="text" placeholder="Tên Của Bạn...">
+                                    </div>
+                                </div>
+                                <div class="feild">
+                                    <div class="input-box">
+                                        <input type="email" name="contact[email]" id="email" placeholder="Email của bạn...">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="wide feild">
+                                <div class="input-box">
+                                    <textarea name="contact[body]" id="" cols="10" rows="7" placeholder="Viết bình luận..."></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buttons-set">
+                        <button type="submit" title="Send" class="button">
+                            <span>Gửi</span>
+                        </button>
+                        <button type="reset" class="button" value="Reset">
+                            <span>Hủy</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="clear-fix"></div>
+    </footer>
+</body>
+</html>
