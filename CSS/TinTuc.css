@@ -55,9 +55,9 @@
 }
 
 .sellers-img img{
-     width: 150px;
-     height: 120px;
-     border-radius: 5px;
+    width: 150px;
+    height: 120px;
+    border-radius: 5px;
 }
 
 .seller-item .sellers-img {
@@ -182,4 +182,41 @@ i.fa-newspaper{
     color: #bf1515;
     font-weight: 400;
     font-size: 12px;
+}
+
+#pagination{
+    /* width: 100%; */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+#pagination a.page-node:hover, 
+#pagination span.page-node.current {
+    border-bottom: 2px solid #28b241;
+    color: #28b241;
+    font-weight: bold;
+}
+#pagination a.page-node,
+#pagination span.page-node {
+    font-size: 15px;
+    color: #333333;
+    padding: 0px 10px;
+    height: 57px;
+    display: inline-block;
+    line-height: 56px;
+}
+
+#pagination a.TrangSau span{
+    margin: 20px;
+    margin-right: 85px;
+    float: right;
+    font-size: 14px;
+}
+
+#pagination a.TrangTruoc span{
+    float: left;
+    margin: 15px;
+    font-size: 14px;
 }

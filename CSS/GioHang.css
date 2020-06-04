@@ -93,3 +93,7 @@
     bottom: 35px;
 }
 
+.GioHang table td.remove a:hover{
+    color: #FE9705;
+}
+
