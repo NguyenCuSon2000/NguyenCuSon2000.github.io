@@ -681,7 +681,7 @@ footer section ul li{
 
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1845em){
-  
+    
     .Logo img{
         width: 150px;
     }
@@ -713,33 +713,40 @@ footer section ul li{
     }
     
     /* PHẦN THỰC ĐƠN */
-    .content img{
-        width: 180px;
-        height: 150px;
+    /* .content{
+        text-align: center;
+        clear: both;
+        float: left;
     }
-    .content h2{
-        margin-left: 50px;
-        text-align: left;
+    .content_ThucDon{
+        width: 100%;
+        height: auto;
     }
-    
-    .content .Thuc-Don .button{
-        display: none;
+    .title_Thuc-don{
+        float: left;
     }
-
-    section.content article.info_ThucDon{
-        max-width: 100%;
+    .info_ThucDon{
+        clear: both;
+        height: auto;
+        width: 100%;
     }
     section.content article div.Thuc-Don{
-        width:  15%;
+        width: 45%;
     }
-    section.content article div.Khuyen-Mai{
-        width: 16%;
+    section.content article div.Thuc-Don img{
+        width: 100%;
+        height: 70%;
     }
-    
-    
+    section.content article div.Thuc-Don .button{
+        display: none;
+    }
+    .content_KhuyenMai{
+       width: 100%;
+       clear: both;
+    } */
+
+
     /* TIN TỨC */
-    
-    
     .content .info_TinTuc .Tin-tuc{
         width: 100%;
         margin: 0px;
@@ -756,8 +763,6 @@ footer section ul li{
         text-align: center;
         margin: 0px;
     }
-    
-    
 }
 
 /* Mobile & Table: width < 1024px */

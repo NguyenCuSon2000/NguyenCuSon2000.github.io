@@ -1,9 +1,10 @@
 .tin-tuc {
-    width: 1290px;
+    width:1300px;
     margin: auto;
 }
 
 .left{
+    margin-left: 3%;
     width: 26%;
     padding-top: 30px;
     float: left;
@@ -113,7 +114,7 @@
 }
 
 .news-content .content-artical{
-    width: 50%;
+    width: 55%;
     float: left;
 } 
 
@@ -184,22 +185,23 @@ i.fa-newspaper{
     font-size: 12px;
 }
 
-#pagination{
+
+
+
+ .pagination{
     /* width: 100%; */
     text-align: center;
     margin-bottom: 30px;
 }
 
-
-
-#pagination a.page-node:hover, 
-#pagination span.page-node.current {
+.pagination a.page-node:hover, 
+.pagination span.page-node.current {
     border-bottom: 2px solid #28b241;
     color: #28b241;
     font-weight: bold;
 }
-#pagination a.page-node,
-#pagination span.page-node {
+.pagination a.page-node,
+.pagination span.page-node {
     font-size: 15px;
     color: #333333;
     padding: 0px 10px;
@@ -208,14 +210,14 @@ i.fa-newspaper{
     line-height: 56px;
 }
 
-#pagination a.TrangSau span{
+.pagination a.TrangSau span{
     margin: 20px;
     margin-right: 85px;
     float: right;
     font-size: 14px;
 }
 
-#pagination a.TrangTruoc span{
+.pagination a.TrangTruoc span{
     float: left;
     margin: 15px;
     font-size: 14px;
