@@ -1,0 +1,27 @@
+.pagination{
+    margin-bottom: 30px;
+}
+
+.pagination a.page-node:hover, 
+.pagination span.page-node.current {
+    border-bottom: 2px solid #28b241;
+    color: #28b241;
+    font-weight: bold;
+}
+.pagination a.page-node,
+.pagination span.page-node {
+    font-size: 15px;
+    color: #333333;
+    padding: 0px 10px;
+    height: 57px;
+    display: inline-block;
+    line-height: 56px;
+}
+
+
+.pagination a.TrangTruoc span{
+    margin: 20px;
+    margin-right: 300px;;
+    float: left;
+    font-size: 13px;
+}
