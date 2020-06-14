@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./font/fontawesome-free-5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="./JS/script.js"></script>
     <script>
         // Kiểm tra họ tên
         function hoten_Onblur() {
@@ -23,7 +24,7 @@
             }
             loiht.innerHTML="";
         }
-
+        
         // Kiểm tra email
         function checkEmail_Onblur() {
             mail = formLienHe.email.value;
@@ -36,7 +37,7 @@
                 return;
             }
             loiEmail.innerHTML="";
-
+            
             if (!kq) {
                 loiEmail.innerHTML = "Hay nhap dia chi email hop le.\nExample@gmail.com";
                 formLienHe.email.focus();
@@ -147,7 +148,7 @@
                         <label for="lname">Email</label>
                         <input type="text" id="email" name="email" placeholder="Nhập email..." onblur="checkEmail_Onblur();">
                         <span id="IDemail" style="color:#FF0000; font-size:14px"></span><br>
-
+                        
                         <label for="country">Viết bình luận</label><br>
                         <textarea name="textarea" id="comment" class="text" cols="30" rows="5" placeholder="Viết bình luận..."></textarea><br>
                         <input type="submit" value="Gửi liên hệ">
@@ -176,6 +177,13 @@
                 </div>
             </div>
         </article>
+        
+        <!-- SCROLL TO TOP -->
+        <div class="Scroll">
+            <a href="#top" id="scrollToTop" title="Lên trên" style="display: block;"  onclick="scrollToTop();return false">
+                <i class="fas fa-arrow-alt-circle-up"></i>
+            </a>
+        </div>
     </section>
     
     

@@ -741,11 +741,11 @@ footer section ul li{
         display: none;
     }
     .content_KhuyenMai{
-       width: 100%;
-       clear: both;
+        width: 100%;
+        clear: both;
     } */
-
-
+    
+    
     /* TIN TỨC */
     .content .info_TinTuc .Tin-tuc{
         width: 100%;
@@ -787,4 +787,13 @@ footer section ul li{
         width: 43%;
         margin: 10px 20px;
     }
+}
+
+
+.Scroll i{
+    font-size: 50px;
+    color: #99ADC0;
+    position: fixed;
+    bottom: 50px;
+    right:  20px;
 }
