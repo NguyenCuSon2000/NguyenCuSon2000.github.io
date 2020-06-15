@@ -8,6 +8,7 @@ section.main h4{
     background-color: #F2F2F2;
     min-height: 30px;
     padding:20px 260px;
+    font-size: 13px;
 }
 
 section.main h4 a:hover{
