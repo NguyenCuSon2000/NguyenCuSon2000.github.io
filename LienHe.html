@@ -14,33 +14,48 @@
     <script>
         // Kiểm tra họ tên
         function hoten_Onblur() {
-            ht=formLienHe.name.value;
+            ht=frmLienHe.name.value;
             var loiht=document.getElementById("IDhoten");
-            
+            var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+
             if(ht=="") {
-                loiht.innerHTML="Họ tên không được bỏ trống !";
-                formLienHe.name.focus();
+                loiht.innerHTML="* Họ tên không được bỏ trống !";
+                frmLienHe.name.focus();
                 return;
             }
             loiht.innerHTML="";
+
+            if(!isNaN(ht)){
+                loiht.innerHTML = "* Tên không chứa ký tự số ";
+                frmLienHe.name.focus();
+                return;
+            }
+            loiht.innerHTML="";
+
+            if(ht.match(format)){
+                loiht.innerHTML = "* Tên không được chứa ký tự đặc biệt";
+                frmLienHe.name.focus();
+                return true;
+            }
+            loiht.innerHTML = "";
         }
         
         // Kiểm tra email
         function checkEmail_Onblur() {
-            mail = formLienHe.email.value;
+            mail = frmLienHe.email.value;
             var loiEmail=document.getElementById("IDemail");
             var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             kq = filter.test(mail);
             if(mail=="") {
-                loiEmail.innerHTML="Email không được bỏ trống !";
-                formLienHe.email.focus();
+                loiEmail.innerHTML="* Email không được bỏ trống !";
+                frmLienHe.email.focus();
                 return;
             }
             loiEmail.innerHTML="";
             
             if (!kq) {
-                loiEmail.innerHTML = "Hay nhap dia chi email hop le.\nExample@gmail.com";
-                formLienHe.email.focus();
+                loiEmail.innerHTML = "* Hay nhap dia chi email hop le.\nExample@gmail.com";
+                frmLienHe.email.focus();
                 return;
             }
             loiEmail.innerHTML="";
@@ -140,7 +155,7 @@
                     <h4>Viết nhận xét</h4>
                 </div>
                 <div class="info_container">
-                    <form action="" method="GET/POST" name="formLienHe" id="formLienHe">
+                    <form action="" method="GET/POST" name="frmLienHe" id="frmLienHe">
                         <label for="fname">Họ Và Tên</label>
                         <input type="text" id="name" name="name" placeholder="Nhập họ và tên..." onblur="hoten_Onblur();">
                         <span id="IDhoten" style="color:#FF0000; font-size:14px"></span><br>
@@ -295,13 +310,13 @@
             <h3>Gửi liên hệ</h3>
             <hr>
             <div class="footer-block">
-                <form action="/contact" method="POST">
+                <form name="formLienHe">
                     <div class="form-wraper">
                         <ul class="form-list">
                             <li class="feilds">
                                 <div class="feild">
                                     <div class="input-box">
-                                        <input type="text" name="text" id="text" placeholder="Tên Của Bạn...">
+                                        <input type="text" name="txtTen" id="txtTen" placeholder="Tên Của Bạn...">
                                     </div>
                                 </div>
                                 <div class="feild">
@@ -312,13 +327,13 @@
                             </li>
                             <li class="wide feild">
                                 <div class="input-box">
-                                    <textarea name="contact[body]" id="" cols="10" rows="7" placeholder="Viết bình luận..."></textarea>
+                                    <textarea name="contact[body]" id="txtBinhLuan" cols="10" rows="7" placeholder="Viết bình luận..."></textarea>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="buttons-set">
-                        <button type="submit" title="Send" class="button">
+                        <button type="submit" title="Send" class="button" onclick="KiemTra()">
                             <span>Gửi</span>
                         </button>
                         <button type="reset" class="button" value="Reset">

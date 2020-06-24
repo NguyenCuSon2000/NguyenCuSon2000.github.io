@@ -393,13 +393,13 @@
             <h3>Gửi liên hệ</h3>
             <hr>
             <div class="footer-block">
-                <form action="/contact" method="POST">
+                <form name="formLienHe">
                     <div class="form-wraper">
                         <ul class="form-list">
                             <li class="feilds">
                                 <div class="feild">
                                     <div class="input-box">
-                                        <input type="text" name="text" id="text" placeholder="Tên Của Bạn...">
+                                        <input type="text" name="txtTen" id="txtTen" placeholder="Tên Của Bạn...">
                                     </div>
                                 </div>
                                 <div class="feild">
@@ -410,13 +410,13 @@
                             </li>
                             <li class="wide feild">
                                 <div class="input-box">
-                                    <textarea name="contact[body]" id="" cols="10" rows="7" placeholder="Viết bình luận..."></textarea>
+                                    <textarea name="contact[body]" id="txtBinhLuan" cols="10" rows="7" placeholder="Viết bình luận..."></textarea>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="buttons-set">
-                        <button type="submit" title="Send" class="button">
+                        <button type="submit" title="Send" class="button" onclick="KiemTra()">
                             <span>Gửi</span>
                         </button>
                         <button type="reset" class="button" value="Reset">
