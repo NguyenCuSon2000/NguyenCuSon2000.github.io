@@ -543,7 +543,7 @@ footer section ul{
     padding-left: 0px;
 }
 footer section ul li{
-    padding: 10px 0px;
+    margin: 15px 0px;
 }
 
 .footer-block ul li i{
@@ -629,9 +629,6 @@ footer section ul li{
     width: 100%;
 }
 
-.form-list li{
-    margin-bottom: 3px;
-}
 
 .form-list li .feild{
     margin-bottom: 10px;
