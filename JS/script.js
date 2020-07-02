@@ -23,22 +23,22 @@
             } 
             else clearTimeout(scrollAnimation);
         }
-
-
+        
+        
         // PHẦN LIÊN HỆ
-
+        
         function KiemTra(){
-           
+            
             // Kiểm tra tên
             ten = formLienHe.txtTen.value;
             var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
-
+            
             if(ten == ""){
                 alert("Tên không được trống");
                 formLienHe.ten.focus();
                 return;
             }
-
+            
             if(!isNaN(ten)){
                 alert("Tên không chứa ký tự số ");
                 formLienHe.txtTen.focus();
@@ -49,9 +49,9 @@
                 formLienHe.ten.focus();
                 return true;
             }
-
+            
             // Kiểm tra email
-
+            
             var mail = document.getElementById("email").value;
             var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             kq = filter.test(mail);
@@ -66,7 +66,7 @@
                 document.email.focus();
                 return;
             }
-
+            
             // Kiểm tra comment
             var comment = document.getElementById("txtBinhLuan").value;
             if(comment==""){
@@ -76,4 +76,16 @@
             }
         }
         
-      
+        function Cong(){
+            var count = parseInt(document.getElementById('Quantity').value);
+            count = isNaN(count) ? 0 : count;
+            count++;
+            document.getElementById('Quantity').value = count;
+        }
+        
+        function Tru(){
+            var count = parseInt(document.getElementById('Quantity').value);
+            count = isNaN(count) ? 0 : count;
+            count--;
+            document.getElementById('Quantity').value = count;
+        }
