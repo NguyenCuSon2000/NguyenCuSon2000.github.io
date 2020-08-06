@@ -185,7 +185,7 @@ body{
 .menu li a{
     display:inline-block;
     color:white;
-    padding:20px 50px;
+    padding:20px 53px;
     font-size: 22px;
     font-family: 'Lobster Two';
     font-weight: 700;
@@ -199,6 +199,7 @@ body{
     display: block;
     visibility: hidden;
     background-color: #FE9705;
+    z-index: 1;
 }
 
 .menu ul li ul li{
